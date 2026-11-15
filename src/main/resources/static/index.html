@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>教师管理系统</title>
+    <link rel="stylesheet" href="ext/classic/theme-neptune/resources/theme-neptune-all.css">
+    <link rel="stylesheet" href="ext/packages/font-ext/resources/font-ext-all.css">
+    <link rel="stylesheet" href="ext/packages/font-awesome/resources/font-awesome-all.css">
+    <style>
+        html, body {
+            font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+        }
+        /* 面板自己的 body 会刷一层白底，渐变要写在 body 上才盖得住标题与用户文字 */
+        .app-header .x-panel-body {
+            background: linear-gradient(90deg, #2c5f8d, #3b8bc4);
+        }
+        .app-header .app-title {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 0 12px 0 16px;
+            line-height: 46px;
+        }
+        .app-header .app-user {
+            color: #eaf3fa;
+            font-size: 12px;
+            line-height: 46px;
+            padding-right: 8px;
+        }
+        /* 状态列的彩色小圆点 */
+        .status-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 4px;
+            margin-right: 6px;
+            vertical-align: middle;
+        }
+        .status-on { background: #45a74b; }
+        .status-off { background: #c0c4cc; }
+        .x-item-disabled .x-form-text { color: #888; }
+    </style>
+    <script src="ext/ext-all.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+<div id="boot-hint" style="padding:40px;font-size:14px;color:#666;">
+    正在加载教师管理系统…（若长时间停留在此页，请确认后端已启动且 ext 目录下的框架文件完整）
+</div>
+</body>
+</html>
